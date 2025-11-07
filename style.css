@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-family: monospace;
+    gap: 50px;
+    font-size: 1.5em;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avanti{
+    color: black;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.avanti span{
+    color: rgb(217, 152, 0);
+    font-size: 3rem;    
+}
+
+.special-choice{
+    padding: 10px 15px;
+    background-color: #01647d;
+    color: white;
+    font-family: freestyle script;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+.special-choice span{
+    font-family: arial;
+}
+.categories-sect{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px grey;
+}
+.Department{
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+.Categories{
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+.Keyword{
+    width: 400px;
+    border-left: none;
+    border-right: none;
+}
+.Keyword::placeholder{
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+.search-btn{
+    padding: 10px 20px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+.cart-div{
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+}
+.cart-div div{
+    display: flex;
+    width: 150px;
+    gap: 10px;
+}
+.cart-div p{
+    font-family: arial;
+    font-weight: bold;
+}
+.cart-div img{
+    width: 30px;
+    height: 30px;
+}
+.sect-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.quicklink-div{
+    border: 1px solid black;
+    width: 180px;
+    margin-left: 30PX;
+}
+.quicklink-div p{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    font-family: verdana;
+    font-size: 1em;
+
+}
+.quicklink-div h2{
+    font-family: arial;
+    padding: 10px 0;
+}
+.center-img{
+    width: 700px;
+}
+.right-img{
+    height: 400px;
+}
+.sect-2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.sect-2 img{
+    width: 50px;
+    height: 50px;
+}
+.sect-2 main{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sect-3{
+    display: flex;
+    justify-content: space-around;
+}
+.sect-4{
+    display: flex;
+}
+.freeship{
+    width: 1350px;
+    height: 300px;
+}
+.Accessories-main{
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-family: arial;
+    display: flex;
+    gap: 850px;
+}
+.Accessories-main div{
+    display: flex;
+    margin-right : 30px;
+    gap: 50px;
+}
+.electro{
+    color: brown;
+    text-decoration: underline;
+}
+.rel{
+    display: flex;
+    justify-content: space-around;
+}
+.rel h5{
+    font-family: arial;
+    text-align: center;
+}
+.rel img{
+    height: 200px;
+}
+.tu{
+    display: flex;
+    justify-content: space-around;
+}
+.tu h5{
+    font-family: arial;
+    text-align: center;
+}
+.tu img{
+    height: 200px;
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-left{
+    line-height: 30px;
+    cursor: pointer;
+}
+footer h2{
+    
+    margin-bottom: 30px;
+}
+footer div{
+    padding-top: 10px;
+
+}
+.logos img{
+    height: 25px;
+}
+.logos{
+    display: flex;
+}
+.letter-box input{
+width: 300px;
+height: 35px;
+}
+.letter-box button{
+    width: 80px;
+    background-color: rgb(223, 67, 67);
+    border: none;
+    cursor: pointer;
+}
+.letter-box{
+    display: flex;
+}
+.drop-down{
+    width: 200px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+.drop-down div{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.drop-down div:hover{
+    transition: background-color 0.15s, color 0.15s;
+    background-color: white;
+    color: black;
+}
+li{
+    cursor: pointer;
+}
+
+ /* menu bar */
+
+#ope, #clo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+#menu{
+    background-color: black;
+    color: white;
+    width: 280px;
+    position: fixed;
+    display: none;
+}
+
+#menu li{
+    padding: 10px 12px;
+    text-align: center;
+    font-family: monospace;
+}
+.features:hover .drop-down{
+display: block;
+    
+}
+@media(max-width: 768px){
+    .categories-sect{
+        margin-left: 5px;
+    }
+    .cart-div{
+        margin-left: 20px;
+    }
+.sect-1{
+    display: block;
+    
+}
+.quicklink-div{
+    margin-left: 300px;
+}
+.center-img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.right-img{
+    margin-left: 300px;
+}
+.sect-2 main{
+display: flex;
+}
+.freeship{
+    width: 400px;
+    height: 200px;
+    margin-left: 150px; 
+    
+}
+.sect-4{
+    display: block;
+}
+.sect-4 main{
+    margin-left: 270px;
+    margin-top: 10px;
+}
+.Accessories-main{
+    display: block;
+}
+}
+@media(max-width: 425px){
+    body{
+        background-color: grey;
+    }
+    .Keyword{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    .search-btn{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .cart-div{
+        padding-bottom: 20px;
+        padding-left: 100px;
+    }
+    .quicklink-div{
+        margin-left: 150px;
+    }
+    .center-img{
+        width: 300px;
+        margin-left: 100px;
+    }
+    .right-img{
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+    .sect-2 img{
+        width: 30px;
+        height: 30px;
+    }
+    .sect-2{
+        margin-left: 70px;
+    }
+    .freeship{
+        width: 100px;
+        height: 100px;
+    }
+    .scan-off{
+        width: 140px;
+        height: 100px;
+    }
+    .spring{
+        width: 100px;
+        height: 100px;
+    }
+    .accessories-main{
+        display: block;
+        margin-left: 20px;
+    }
+    .accessories-main div{
+        display: block;
+        line-height: 40px;
+    }
+    .sect-4{
+        margin-left: 100px;
+    }
+    .letter-box{
+        width: 150px;
+    }
+    .footer div{
+        margin-left: 20px;
+    }
+    ul{
+        display: none;
+    }
+    #ope{
+        display: block;
+    }
+}
